@@ -1,23 +1,9 @@
 import "./App.css";
-import Listing from "./component/Listing";
+import ListingList from "./component/ListingList";
 import data from "./data/listings.json";
 
 function App() {
-  const listings = data.map((item) => {
-    return (
-      <Listing
-        title={item.title}
-        company={item.company}
-        image={item.logo}
-        location={item.location}
-        jobType={item.jobType}
-        desc={item.desc}
-        link={item.link}
-      />
-    );
-  });
-
-  return <div className="App">{listings}</div>;
+  return <ListingList data={data} />;
 }
 
 export default App;
