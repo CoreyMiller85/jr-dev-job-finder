@@ -1,6 +1,8 @@
 .listing-list {
-  display: flex;
-  flex-direction: column;
-  width: 800px;
-  background: red;
+  max-width: 500px;
+  padding: 1.6rem;
+  margin: 0px auto;
+}
+
+@media only screen and (min-width: 768px) {
 }

@@ -1,5 +1,29 @@
 .listing-main {
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 1rem;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  margin: 1.6rem 0;
+  display: flex;
+  max-width: 500px;
+  padding-bottom: 1.6rem;
+}
+
+.logo-box {
+  margin-right: 1.6rem;
+  align-self: center;
+  .logo-img {
+    height: 50px;
+  }
+}
+
+.text-box {
+  .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+
+/******************************************
+DESKTOP
+******************************************/
+
+@media only screen and (min-width: 768px) {
 }

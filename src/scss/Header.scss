@@ -1,0 +1,13 @@
+.header-main {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  .list {
+    list-style-type: none;
+    display: flex;
+    li:nth-child(last) {
+      color: red;
+    }
+  }
+}
