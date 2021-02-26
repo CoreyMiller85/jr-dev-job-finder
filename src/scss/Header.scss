@@ -1,13 +1,46 @@
 .header-main {
-  background: black;
+  background: purple;
+  width: 100%;
   color: white;
   display: flex;
-  justify-content: space-around;
-  .list {
-    list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 5px 5px rgba($color: black, $alpha: 0.2);
+  .fas {
+    font-size: 2rem;
+  }
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.hamburger {
+  margin-right: 1rem;
+}
+
+.list {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-main {
+    background: black;
+    color: white;
     display: flex;
-    li:nth-child(last) {
-      color: red;
+    justify-content: space-around;
+    .list {
+      list-style-type: none;
+      display: flex;
     }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  li {
+    margin-right: 1rem;
   }
 }
